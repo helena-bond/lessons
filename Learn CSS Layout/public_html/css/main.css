@@ -1,0 +1,193 @@
+/* 
+    Created on : 23.04.2014, 10:00:44
+    Author     : e_bondarenko
+*/
+
+/**
+First part of tutorial:
+ - auto margin
+ - box-sizing
+ - positioning (static, fixed, absolute, relative)
+*/
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+div {
+    border: 1px dotted blueviolet;
+}
+
+#main {
+    max-width: 600px;
+    margin: 0 auto; 
+}
+
+.simple {
+    width: 500px;
+    margin: 20px auto;
+}
+
+.fancy {
+    width: 500px;
+    margin: 20px auto;
+    padding: 50px;
+    border-width: 10px;
+}
+
+.static {
+    position: static;
+}
+
+.relative1 {
+    position: relative;
+}
+
+.relative2 {
+    position: relative;
+    top: -20px;
+    left: 20px;
+    background-color: white;
+    width: 500px;
+}
+
+.fixed {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 200px;
+    background-color: white;
+}
+
+.relative {
+    position: relative;
+    width: 600px;
+    height: 400px;
+}
+
+.absolute {
+    position: absolute;
+    top: 120px;
+    right: 0;
+    width: 300px;
+    height: 200px;
+}
+
+/**
+ Example part about positioning
+*/
+.container {
+    position: relative;
+    border: 2px solid yellow;
+}
+nav {
+    position: absolute;
+    left: 0px;
+    width: 200px;
+    border: 2px solid blue;
+}
+/* links in nav */
+nav > a {
+    display: block;
+}
+section {
+    /* position is static by default */
+    margin-left: 200px;
+    border: 2px solid gray;
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 70px;
+    background-color: white;
+    width: 100%;
+    border: 2px solid pink;
+}
+body {
+    margin-bottom: 120px;
+}
+
+/**
+Float part
+*/
+#main img {
+    float: right;
+    margin: 0 0 1em 1em;
+    border: 1px dotted burlywood;
+}
+
+.clearfloating p {
+    clear: both;
+}
+
+/**
+percent width
+*/
+.first {
+    float: left;
+    width: 25%;
+}
+
+.second {
+    margin-left: 26%;
+}
+
+.clear {
+    clear: both;
+}
+
+/**
+Media queries and inline blocks
+*/
+@media screen and (min-width:600px) {
+    .media-q {
+        border: 10px solid yellow;
+    }
+    .inline {
+        display: inline-block;
+        width: 200px;
+        height: 100px;
+        margin: 1em; 
+    }
+
+}
+@media screen and (max-width:599px) {
+    .media-q {
+        border: 3px dotted pink;
+    }
+    .inline {
+        display: block;
+        width: auto;
+        margin: 1em; 
+    }
+}
+
+/**
+Column and flex
+*/
+.two-column {
+    padding: 1em;
+    -moz-column-count: 2;
+    -moz-column-gap: 1em;
+    -webkit-column-count: 2;
+    -webkit-column-gap: 1em;
+    column-count: 2;
+    column-gap: 1em;
+}
+
+.flex {
+    display: -webkit-flex;
+    display: flex;
+}
+
+.flex1 {
+    -webkit-flex: 1;
+    flex: 1;
+}
+
+.flex2 {
+    -webkit-flex: 2;
+    flex: 2;
+}

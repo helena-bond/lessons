@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>HTML tutorial from htmldog.com</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Tutorial content -->
+        <div id="content" style="padding: 20px;">
+            
+            <h3>&lt;time&gt; tag sample</h3>
+            <p>
+                This page created on <time datetime="2014-04-22">Tuesday 22nd April 2014</time>
+            </p>
+            
+            <h3>&lt;mark&gt; tag sample</h3>
+            <p>
+                <mark>Mark</mark> is used to highlight text as if with a marker pen.
+            </p>
+            
+            <hr/>
+            
+            <h3>Conditional Comments</h3>
+            <p>
+                This page also uses conditional comments provided by page generator 
+                from <a href="http://html5boilerplate.com">HTML5 Boilerplate</a>.
+            </p>
+            
+            <hr/>
+            
+            <h3>Improved using of tables</h3>
+            <table border="1">
+                <caption>Table caption</caption>
+                <colgroup>
+                    <col>
+                    <col class="alternative">
+                    <col>
+                </colgroup>
+                <thead>
+                    <tr>
+                        <td>Header 1</td>
+                        <td>Header 2</td>
+                        <td>Header 3</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Ordinary</td>
+                        <td>Alternative</td>
+                        <td>Ordinary</td>
+                    </tr>
+                    <tr>
+                        <td>column</td>
+                        <td>column</td>
+                        <td>column</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>Footer 1</td>
+                        <td>Footer 2</td>
+                        <td>Footer 3</td>
+                    </tr>
+                </tfoot>
+            </table>
+            
+            <hr/>
+            
+            <h3>Accessible Links</h3>
+            <ul>
+                <li><a href="http://ziyonet.uz" tabindex="1" title="Educational pornal" accesskey="z">ZiyoNET</a></li>
+                <li><a href="http://id.uz" tabindex="2" title="OpenID server" accesskey="d">ID.UZ</a></li>
+                <li><a href="http://umail.uz" tabindex="3" title="National mailing system" accesskey="m">uMail</a></li>
+                <li><a href="#content" tabindex="4">go to page begining</a></li>
+            </ul>
+            
+            <hr/>
+            
+            <h3>Accessible Forms</h3>
+            <form action="self">
+                <fieldset>
+                    <legend>First fieldset</legend>
+                    <label for="firstFierd">First Field</label>
+                    <input name="firstFierd" id="firstFierd" accesskey="f" tabindex="5">
+                </fieldset>
+                <fieldset>
+                    <legend>Second fieldset</legend>
+                    <label for="secondField">Second Field</label>
+                    <select name="secondField" id="secondField" accesskey="s" tabindex="6">
+                        <optgroup label="Numbers">
+                            <option value="0">Null</option>
+                            <option value="1">Two</option>
+                            <option value="2">Three</option>
+                        </optgroup>
+                        <optgroup label="Colors">
+                            <option value="fff">White</option>
+                            <option value="000">Black</option>
+                            <option value="ccc">Gray</option>
+                        </optgroup>
+                    </select>
+                </fieldset>
+            </form>
+            
+            <hr/>
+            
+            <h3>HTML5 Forms Pt. 1: Input Types</h3>
+            <form action="self">
+                <div class="block">
+                    <label for="search">Search</label>       
+                    <input type="search" name="search" id="search">              
+                </div>
+                <div class="block">
+                    <label for="telephone_number">Tel</label>    
+                    <input type="tel" name="telephone_number" id="telephone_number">
+                </div>
+                <div class="block">
+                    <label for="web_address">Url</label>    
+                    <input type="url" name="web_address" id="web_address">
+                </div>
+                <div class="block">
+                    <label for="email_address">Email</label>    
+                    <input type="email" name="email_address" id="email_address">
+                </div>
+                <div class="block">
+                    <label for="temperature">Number</label>                     
+                    <input type="range" name="temperature" id="temperature" min="15" max="25" step="0.5" value="18.5">
+                </div>
+                <div class="block">
+                    <label for="datetime">Datetime</label>    
+                    <input type="datetime" name="datetime" id="datetime">
+                </div>
+                <div class="block">
+                    <label for="color">Color</label>    
+                    <input type="color" name="color" id="color" value="#ffffff">
+                </div>
+            </form>
+            
+            <hr/>
+            
+            <h3>HTML5 Forms Pt. 2: Attributes and Data Lists</h3>
+            <form action="self">
+                <div class="block">
+                    <label for="autofocus">Autofocus</label>    
+                    <input name="autofocus" id="autofocus" placeholder="placeholder" autofocus>
+                </div>
+                <div class="block">
+                    <label for="datalist">Datalist</label>    
+                    <input name="datalist" id="datalist" placeholder="datalist" list="country_name">
+                    <datalist id="country_name">
+                        <option value="Afghanistan">
+                        <option value="Albania">
+                        <option value="Algeria">
+                        <option value="Andorra">
+                        <option value="Armenia">
+                        <option value="Australia">
+                        <option value="Austria">
+                        <option value="Azerbaijan">
+                    </datalist>
+                </div>
+            </form>
+            
+            <hr/>
+            
+            <h3>Embedded Content: video</h3>
+            <video src="randomvideo.mp4" width="300" height="200" loop controls>
+                Browser doesn't support HTML5 video.
+            </video>
+
+            <h3>Embedded Content: audio</h3>
+            <audio src="randomaudio.mp3" controls>
+                Browser doesn't support HTML5 audio.
+            </audio>
+
+            <h3>Embedded Content: canvas</h3>
+            <canvas id="mycanvas" width="400" height="400">
+                
+            </canvas>
+
+        </div>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+    </body>
+</html>
